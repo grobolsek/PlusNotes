@@ -2,11 +2,14 @@
 
 
 {% block moreScripts %}
-	<link rel="stylesheet" href="/static/css/main/test.css">
+	<link rel="stylesheet" href="/static/css/main/note.css">
 {% endblock %}
 
 {% block content %}
-<div>
-	hello world
-</div>
+    <div class="note">
+        <div class="note-title" contenteditable="true" aria-multiline="true" role="textbox" aria-label="Title" tabindex="0" placeholder="Title"></div><hr>
+        <div class="note-content" contenteditable="true" aria-multiline="true" role="textbox" aria-label="Note" tabindex="0" placeholder="Write something..."></div>
+        <div class="note-toolbar"></div>
+    </div>
+
 {% endblock %}

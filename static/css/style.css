@@ -1,13 +1,14 @@
 :root{
 	--clr-bg: rgb(31,40,51);
 	--clr-text: rgb(197,198,199);
+	--clr-text-op: rgba(197,198,199, 0.7);
 	--clr-black: rgb(11,12,16);
 	--clr-light: rgb(102, 252, 241);
 	--clr-dark: rgb(69, 162, 159);
+	--br-ta: 0.8rem;
 }
 
 * {
 	background-color: var(--clr-bg);
 	color: var(--clr-text);
-	font-family: Roboto,Arial,sans-serif;
 }
