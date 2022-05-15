@@ -5,7 +5,11 @@
 	--clr-black: rgb(11,12,16);
 	--clr-light: rgb(102, 252, 241);
 	--clr-dark: rgb(69, 162, 159);
+	/* border radius for note/text area*/
 	--br-ta: 0.8rem;
+
+	--note-ht: 136px;
+	--note-con-ht: 20px;
 }
 
 * {

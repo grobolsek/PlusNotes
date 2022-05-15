@@ -4,12 +4,13 @@
 .note{
   border: 2px var(--clr-dark) solid;
   border-radius: var(--br-ta);
-  height: 136px;
+  height: var(--note-ht);
   margin: 32px auto auto;
   width: 600px;
-  
+  max-height: 700px;
   box-shadow: 0 3px 5px var(--clr-dark);
 }
+
 .note-title{
   padding: 10px 15px;
   letter-spacing: .00625em;
@@ -30,27 +31,26 @@
   font-size: .875rem;
   font-weight: 400;
   line-height: 1.25rem;
+  max-height: inherit;
 }
 .note-toolbar{
-  flex: 1 0 auto;
+  margin: 4px 0;
+  height: 36px;
+  padding: 0 15px;
+  border-radius: inherit;
+  position: fixed;
 }
 
 /* placeholder for note */
-.note-title[placeholder]:empty::before{
+.note [placeholder]:empty::before{
   content: attr(placeholder);
   color: var(--clr-text);
   opacity: var(--clr-text-op);
 }
-.note-title[placeholder]:empty:focus::before{
-  content: "";
-}
-.note-content[placeholder]:empty::before{
-  content: attr(placeholder);
-  color: var(--clr-text);
-  opacity: var(--clr-text-op);
-}
-.note-content[placeholder]:empty:focus::before{
+.note [placeholder]:empty:focus::before{
   content: "";
 }
 
-
+i {
+  z-index: 100;
+}
