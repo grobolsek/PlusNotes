@@ -9,6 +9,7 @@
   width: 600px;
   max-height: 700px;
   box-shadow: 0 3px 5px var(--clr-dark);
+  position: relative;
 }
 
 .note-title{
@@ -19,6 +20,7 @@
   font-weight: 500;
   line-height: 1.5rem;
   border-radius: inherit;
+  word-break: break-all;
 }
 .note hr{
   margin: -5px 10px 10px 10px;
@@ -40,7 +42,9 @@
   height: 36px;
   padding: 0 15px;
   border-radius: inherit;
-  position: fixed;
+  bottom: 0;
+  width: 100%;
+  position: absolute;
 }
 
 /* placeholder for note */
@@ -54,5 +58,9 @@
 }
 
 i {
+  height: 36px;
+  width: 36px;
   z-index: 100;
+  color: red;
+  background-color: red;
 }

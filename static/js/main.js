@@ -19,7 +19,7 @@ $(document).ready(function(){
         });
     });
 
-    /* find note height
+    // find note height
     $('.note').on('DOMSubtreeModified', function() {
         let clientHeight = document.getElementById('note-content').clientHeight;
         console.log(clientHeight);
@@ -27,5 +27,4 @@ $(document).ready(function(){
         document.getElementById('note').style.height = 136+clientHeight-40+"px"
     });
 
-     */
 });
