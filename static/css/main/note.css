@@ -31,7 +31,9 @@
   font-size: .875rem;
   font-weight: 400;
   line-height: 1.25rem;
-  max-height: inherit;
+  word-break: break-all;
+  max-height: 608px;
+  overflow-y: scroll;
 }
 .note-toolbar{
   margin: 4px 0;

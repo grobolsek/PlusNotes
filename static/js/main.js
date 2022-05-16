@@ -26,5 +26,6 @@ $(document).ready(function(){
         // resize note
         document.getElementById('note').style.height = 136+clientHeight-40+"px"
     });
-    */
+
+     */
 });
