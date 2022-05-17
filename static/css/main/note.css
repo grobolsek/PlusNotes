@@ -38,14 +38,25 @@
   overflow-y: scroll;
 }
 .note-toolbar{
-  margin: 4px 0;
+  margin: 4px 0 0 0;
   height: 36px;
   padding: 0 15px;
-  border-radius: inherit;
+  border-radius: 0 0 var(--br-ta) var(--br-ta);
+  background-color: var(--clr-bg-l);
   bottom: 0;
   width: 100%;
   position: absolute;
+  z-index: 10;
 }
+.note-toolbar ol {
+  z-index: 100;
+  background-color: var(--clr-bg-l);
+}
+
+.note-toolbar li {
+  color: var(--clr-text);
+}
+
 
 /* placeholder for note */
 .note [placeholder]:empty::before{
@@ -55,12 +66,4 @@
 }
 .note [placeholder]:empty:focus::before{
   content: "";
-}
-
-i {
-  height: 36px;
-  width: 36px;
-  z-index: 100;
-  color: red;
-  background-color: red;
 }

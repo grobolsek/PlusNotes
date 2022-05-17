@@ -1,5 +1,6 @@
 :root{
-	--clr-bg: rgb(31,40,51);
+	--clr-bg: rgb(31, 40, 51);
+	--clr-bg-l: rgba(31, 40, 51, 0.7);
 	--clr-text: rgb(197,198,199);
 	--clr-text-op: rgba(197,198,199, 0.7);
 	--clr-black: rgb(11,12,16);

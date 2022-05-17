@@ -2,7 +2,7 @@ $(document).ready(function(){
     console.log("js in working")
 	// add list with button
 	$( "#addList" ).click(function() {
-		$( "#main" ).append( '<ol class="list"></ol>' );
+		$( "#note-content" ).append( '<ol class="list"></ol>' );
 		$( ".list:last-child" ).append( "<li>Appended item</li>" );
 	});
 
@@ -21,10 +21,11 @@ $(document).ready(function(){
 
     // find note height
     $('.note').on('DOMSubtreeModified', function() {
-        let clientHeight = document.getElementById('note-content').clientHeight;
-        console.log(clientHeight);
+        let clientHeight = document.getElementById('note-content').clientHeight
         // resize note
-        document.getElementById('note').style.height = 136+clientHeight-40+"px"
+        document.getElementById('note').style.height = 136+clientHeight-40+ "px"
     });
 
+    let cursorPosition = $('#note-content').prop("selectionStart");
+    console.log(cursorPosition)
 });

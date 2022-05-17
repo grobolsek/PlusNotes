@@ -5,15 +5,16 @@
 	<link rel="stylesheet" href="/static/css/main/note.css">
 
     <!-- Icons-->
-    <script src="kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
 {% endblock %}
 
 {% block content %}
     <div class="note" id="note">
-        <div class="note-title" contenteditable="true" aria-multiline="true" role="textbox" aria-label="Title" tabindex="0" placeholder="Title"></div><hr>
+        <div class="note-title" id="note-title" contenteditable="true" aria-multiline="true" role="textbox" aria-label="Title" tabindex="0" placeholder="Title"></div><hr>
         <div class="note-content" id="note-content" contenteditable="true" aria-multiline="true" role="textbox" aria-label="Note" tabindex="0" placeholder="Write something..."></div>
-        <div class="note-toolbar"> add list</div>
+        <div class="note-toolbar">
+            <div role="button" id="addList">add List</div>
+        </div>
     </div>
 
 
